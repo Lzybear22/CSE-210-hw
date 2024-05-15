@@ -1,33 +1,28 @@
 using System;
-
+ 
 class Program
 {
     static void Main(string[] args)
-{
-    int userchoice = 1;
-    
-    while (userchoice != 0)
     {
-    Console.WriteLine("Please pick an option");
-    Console.WriteLine("Write New Entry");
-    Console.WriteLine("Display Journal");
-    Console.WriteLine("Save Journal");
-    Console.WriteLine("Load Journal");
-    Console.WriteLine("0 To End Program");
-    
-    Console.Write("Enter your choice: ");
-    string userInput = Console.ReadLine();
-    
-    if (!int.TryParse(userInput, out userchoice))
-    {
-        Console.WriteLine("Invalid input. Please enter a valid number. ");
-        continue;
-    }
-
-    Console.WriteLine("You chose: " + userchoice);
-
-    
-    Console.WriteLine("Journal closed. ");
+        int userChoice = 1;
+        while (userChoice != 0)
+        {  
+            Console.WriteLine("Journal Options");
+            Console.WriteLine("1. Write New Entry");
+            Console.WriteLine("2. Display Journal");
+            Console.WriteLine("3. Save Journal");
+            Console.WriteLine("4. Load Journal");
+            Console.WriteLine("0. Exit Program.");
+            Console.Write("Choose a number: ");
+            userChoice = int.Parse(Console.ReadLine());
+ 
+            if (userChoice == 1)
+            {
+                string userEntry = Entry.CreateEntry();
+                Console.WriteLine(userEntry);
+            }
         }
+ 
+ 
     }
 }
