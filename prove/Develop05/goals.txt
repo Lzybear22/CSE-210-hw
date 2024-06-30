@@ -1,0 +1,1 @@
+SimpleGoal:Give a talk,Speak in Sacrament meeting when asked,100,true
