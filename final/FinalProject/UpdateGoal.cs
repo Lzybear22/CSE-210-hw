@@ -21,7 +21,6 @@ public class UpdateGoal
         {
             double newValue;
 
-            // Input validation for new progress value
             while (true)
             {
                 Console.Write("Enter new progress value: ");

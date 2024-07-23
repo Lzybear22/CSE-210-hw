@@ -17,7 +17,7 @@ public class AddGoal
         var description = Console.ReadLine();
 
         double targetValue;
-
+        
         while (true)
         {
             Console.Write("Enter target value: ");
