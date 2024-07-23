@@ -2,8 +2,14 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello FinalProject World!");
+        Console.Write("Enter your name: ");
+        var name = Console.ReadLine();
+
+        var user = new User(name);
+
+        var menu = new Menu(user);
+        menu.ShowMenu();
     }
 }
